@@ -1,3 +1,23 @@
 .nav-container {
   background-color: orange;
 }
+
+.carousel-div {
+  display: flex;
+  min-width: 100vw;
+  justify-content: center;
+}
+
+.carousel-container {
+  border: 2px solid #444444;
+  align-self: center;
+  justify-self: center;
+  width: 60vw; /* Adjust the width as needed */
+  height: 600px; /* Adjust the height as needed */
+}
+
+.carousel-image {
+  width: 60vw; /* Adjust the width as needed */
+  height: 600px; /* Adjust the height as needed */
+  object-fit: cover; /* Ensures the image covers the entire container, maintaining aspect ratio */
+}
