@@ -22,8 +22,8 @@ const BasicExample: React.FC<NavbarProps> = ({isLoggedIn}) => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home" as={Link} to="/">Home</Nav.Link>
-            <Nav.Link href="#link" as={Link} to="/">Link</Nav.Link>
+            <Nav.Link href="#home" as={Link} to="/">Hiking</Nav.Link>
+            <Nav.Link href="#link" as={Link} to="/">Camping</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
