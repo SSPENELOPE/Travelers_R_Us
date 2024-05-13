@@ -24,12 +24,12 @@ const BasicExample: React.FC<NavbarProps> = ({isLoggedIn}) => {
           <Nav className="me-auto">
             <Nav.Link href="#home" as={Link} to="/">Hiking</Nav.Link>
             <Nav.Link href="#link" as={Link} to="/">Camping</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+            <NavDropdown title="Travel" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Forums</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Book a Stay</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Coming soon</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.4">Coming Soon</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav>
