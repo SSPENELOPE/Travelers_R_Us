@@ -5,6 +5,7 @@ import {
   BrowserWindow,
   MenuItemConstructorOptions,
 } from 'electron';
+import { resolveHtmlPath } from './util';
 
 interface DarwinMenuItemConstructorOptions extends MenuItemConstructorOptions {
   selector?: string;
@@ -206,6 +207,13 @@ export default class MenuBuilder {
             accelerator: 'Ctrl+W',
             click: () => {
               this.mainWindow.close();
+            },
+          },
+          {
+            label: '&Go Home',
+            accelerator: 'Ctrl+H',
+            click: () => {
+              this.mainWindow.loadURL(resolveHtmlPath('index.html'));
             },
           },
         ],

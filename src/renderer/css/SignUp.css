@@ -1,0 +1,169 @@
+/* SignUp */
+:root {
+  --color: green;
+  --clr: #39FF14;
+}
+
+.signup-form-wrapper {
+  /* background-image: url("../../assets/images/grand_canyon.jpg"); */
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-form {
+  background-color: rgba(42, 67, 77, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  height: 60%;
+  width: 40vw;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-around;
+  animation: glow 2s infinite alternate;
+}
+
+.signup-form-group {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+}
+
+.signup-form-label {
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  justify-self: flex-end;
+  align-self: flex-start;
+  width: 100%;
+}
+
+.signup-form-input {
+  width: 90%;
+  border: 1px solid rgb(135, 206, 235);
+  box-shadow: 1px 1px 0.5px rgb(135, 206, 235);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+@keyframes glow {
+
+  0%,
+  100% {
+      box-shadow: 0 0 10px rgb(135, 206, 235);
+  }
+
+  50% {
+      box-shadow: 0 0 20px rgb(135, 206, 235);
+  }
+}
+
+/* Signup button */
+.signup-button {
+  position: relative;
+  background: #444;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  transition: 0.2s;
+}
+
+.signup-button:hover {
+  letter-spacing: 0.2rem;
+  padding: 1.1rem 3.1rem;
+  background: var(--clr);
+  color: var(--clr);
+  /* box-shadow: 0 0 35px var(--clr); */
+  animation: box 3s infinite;
+}
+
+.signup-button::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #272822;
+}
+
+.signup-button span {
+  position: relative;
+  z-index: 1;
+}
+.signup-button i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.signup-button i::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 80%;
+  top: -2px;
+  border: 2px solid var(--clr);
+  background: #272822;
+  transition: 0.2s;
+}
+
+.signup-button:hover i::before {
+  width: 15px;
+  left: 20%;
+  animation: move 3s infinite;
+}
+
+.signup-button i::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 20%;
+  bottom: -2px;
+  border: 2px solid var(--clr);
+  background: #272822;
+  transition: 0.2s;
+}
+
+.signup-button:hover i::after {
+  width: 15px;
+  left: 80%;
+  animation: move 3s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes box {
+  0% {
+    box-shadow: #27272c;
+  }
+  50% {
+    box-shadow: 0 0 25px var(--clr);
+  }
+  100% {
+    box-shadow: #27272c;
+  }
+}
